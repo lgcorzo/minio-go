@@ -31,7 +31,7 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/minio/crc64nvme"
+	"github.com/lgcorzo/crc64nvme"
 )
 
 // ChecksumMode contains information about the checksum mode on the object

@@ -1,4 +1,4 @@
-module github.com/minio/minio-go/v7
+module github.com/lgcorzo/minio-go/v7
 
 go 1.23.0
 
@@ -10,8 +10,8 @@ require (
 	github.com/goccy/go-json v0.10.5
 	github.com/google/uuid v1.6.0
 	github.com/klauspost/compress v1.18.0
-	github.com/minio/crc64nvme v1.0.1
-	github.com/minio/md5-simd v1.1.2
+	github.com/lgcorzo/crc64nvme v1.0.1
+	github.com/lgcorzo/md5-simd v1.1.2
 	github.com/rs/xid v1.6.0
 	golang.org/x/crypto v0.36.0
 	golang.org/x/net v0.38.0

@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/encrypt"
+	"github.com/lgcorzo/minio-go/v7/pkg/encrypt"
 )
 
 // AdvancedGetOptions for internal use by MinIO server - not intended for client use.

@@ -21,7 +21,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/minio/minio-go/v7/pkg/s3utils"
+	"github.com/lgcorzo/minio-go/v7/pkg/s3utils"
 )
 
 // BucketExists verifies if bucket exists and you have permission to access it. Allows for a Context to

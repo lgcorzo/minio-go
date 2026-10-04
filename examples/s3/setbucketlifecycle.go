@@ -24,9 +24,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/lifecycle"
+	"github.com/lgcorzo/minio-go/v7"
+	"github.com/lgcorzo/minio-go/v7/pkg/credentials"
+	"github.com/lgcorzo/minio-go/v7/pkg/lifecycle"
 )
 
 func main() {
