@@ -30,7 +30,7 @@ jobs:
     - name: Checkout minio-cpp
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
-        repository: minio/minio-cpp
+        repository: lgcorzo/minio-cpp
         # Pinned to a commit, like vcpkg and the actions above: this job copies
         # vendor/s3rdma out of the checkout and installs what it builds, so a
         # floating ref makes the build race whatever landed there. It already

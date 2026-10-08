@@ -25,8 +25,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/minio/minio-go/v7/pkg/policy"
-	"github.com/minio/minio-go/v7/pkg/s3utils"
+	"github.com/lgcorzo/minio-go/v7/pkg/policy"
+	"github.com/lgcorzo/minio-go/v7/pkg/s3utils"
 )
 
 // SetCannedBucketPolicy sets a canned (predefined) access policy on a bucket.
