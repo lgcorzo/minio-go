@@ -26,4 +26,8 @@ require (
 	gopkg.in/ini.v1 v1.67.3 // indirect
 )
 
-replace github.com/lgcorzo/minio-go/v7 => ../..
+replace (
+	github.com/lgcorzo/crc64nvme => github.com/minio/crc64nvme v1.0.1
+	github.com/lgcorzo/md5-simd => github.com/minio/md5-simd v1.1.2
+	github.com/lgcorzo/minio-go/v7 => ../..
+)
