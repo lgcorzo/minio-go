@@ -234,3 +234,8 @@ require (
 	mvdan.cc/gofumpt v0.9.2 // indirect
 	mvdan.cc/unparam v0.0.0-20251027182757-5beb8c8f8f15 // indirect
 )
+
+replace (
+	github.com/lgcorzo/crc64nvme => github.com/minio/crc64nvme v1.0.1
+	github.com/lgcorzo/md5-simd => github.com/minio/md5-simd v1.1.2
+)
