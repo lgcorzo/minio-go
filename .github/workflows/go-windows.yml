@@ -51,7 +51,7 @@ jobs:
         run: |
           New-Item -ItemType Directory -Path "$env:temp/certs-dir"
           Copy-Item -Path testcerts\* -Destination "$env:temp/certs-dir"
-          Invoke-WebRequest -Uri https://github.com/lgcorzo/minio/releases/latest/download/minio.exe -OutFile $HOME/minio.exe -TimeoutSec 180
+          Invoke-WebRequest -Uri https://github.com/minio/minio/releases/latest/download/minio.exe -OutFile $HOME/minio.exe
           Start-Process -NoNewWindow -FilePath "$HOME/minio.exe" -ArgumentList "server", "--quiet", "--certs-dir", "$env:temp/certs-dir", "$env:temp/fs{1...4}"
           $env:SSL_CERT_FILE = "$env:temp/certs-dir/public.crt"
           foreach ($i in 1..60) {
