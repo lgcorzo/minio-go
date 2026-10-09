@@ -32,7 +32,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/lgcorzo/minio-go/v7/pkg/credentials"
 )
 
 // testWaitTimeout bounds every cross-goroutine wait in this file so a

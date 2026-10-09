@@ -28,9 +28,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/kvcache"
-	"github.com/minio/minio-go/v7/pkg/signer"
+	"github.com/lgcorzo/minio-go/v7/pkg/credentials"
+	"github.com/lgcorzo/minio-go/v7/pkg/kvcache"
+	"github.com/lgcorzo/minio-go/v7/pkg/signer"
 )
 
 // Tests validate kvCache operations.

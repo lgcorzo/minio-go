@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/policy"
+	"github.com/lgcorzo/minio-go/v7/pkg/credentials"
+	"github.com/lgcorzo/minio-go/v7/pkg/policy"
 )
 
 func TestSuccessStatusIncludesAccepted(t *testing.T) {

@@ -35,7 +35,7 @@ import (
 
 	"github.com/cespare/xxhash/v2"
 	"github.com/klauspost/crc32"
-	"github.com/minio/crc64nvme"
+	"github.com/lgcorzo/crc64nvme"
 	"github.com/zeebo/xxh3"
 )
 

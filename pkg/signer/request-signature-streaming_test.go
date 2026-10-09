@@ -30,7 +30,7 @@ import (
 	"testing"
 	"time"
 
-	md5simd "github.com/minio/md5-simd"
+	md5simd "github.com/lgcorzo/md5-simd"
 )
 
 // hashWrapper implements the md5simd.Hasher interface.

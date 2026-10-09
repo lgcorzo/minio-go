@@ -20,7 +20,7 @@ package set_test
 import (
 	"fmt"
 
-	"github.com/minio/minio-go/v7/pkg/set"
+	"github.com/lgcorzo/minio-go/v7/pkg/set"
 )
 
 // Example demonstrates basic usage of generic Set with integers

@@ -1,4 +1,4 @@
-module github.com/minio/minio-go/v7
+module github.com/lgcorzo/minio-go/v7
 
 go 1.25.0
 
@@ -10,8 +10,8 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/klauspost/compress v1.19.2
 	github.com/klauspost/crc32 v1.3.0
-	github.com/minio/crc64nvme v1.1.1
-	github.com/minio/md5-simd v1.1.2
+	github.com/lgcorzo/crc64nvme v1.1.1
+	github.com/lgcorzo/md5-simd v1.1.2
 	github.com/rs/xid v1.6.0
 	github.com/tinylib/msgp v1.6.4
 	github.com/zeebo/xxh3 v1.1.0
@@ -233,4 +233,9 @@ require (
 	honnef.co/go/tools v0.7.0 // indirect
 	mvdan.cc/gofumpt v0.9.2 // indirect
 	mvdan.cc/unparam v0.0.0-20251027182757-5beb8c8f8f15 // indirect
+)
+
+replace (
+	github.com/lgcorzo/crc64nvme => github.com/minio/crc64nvme v1.0.1
+	github.com/lgcorzo/md5-simd => github.com/minio/md5-simd v1.1.2
 )

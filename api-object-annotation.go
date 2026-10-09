@@ -25,7 +25,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/s3utils"
+	"github.com/lgcorzo/minio-go/v7/pkg/s3utils"
 )
 
 // Object annotations are named payloads (1 byte to 1 MiB of UTF-8 text)

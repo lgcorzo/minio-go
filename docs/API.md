@@ -10,8 +10,8 @@ package main
 import (
 	"log"
 
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/lgcorzo/minio-go/v7"
+	"github.com/lgcorzo/minio-go/v7/pkg/credentials"
 )
 
 func main() {
@@ -41,8 +41,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/lgcorzo/minio-go/v7"
+	"github.com/lgcorzo/minio-go/v7/pkg/credentials"
 )
 
 func main() {
@@ -508,7 +508,7 @@ Returns a stream of the object data. Most of the common errors occur when readin
 
 | Field                       | Type                       | Description                                                                                                                                           |
 | :-------------------------- | :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `opts.ServerSideEncryption` | _encrypt.ServerSide_       | Interface provided by `encrypt` package to specify server-side-encryption. (For more information see https://godoc.org/github.com/minio/minio-go/v7\) |
+| `opts.ServerSideEncryption` | _encrypt.ServerSide_       | Interface provided by `encrypt` package to specify server-side-encryption. (For more information see https://godoc.org/github.com/lgcorzo/minio-go/v7\) |
 | `opts.Internal`             | _minio.AdvancedGetOptions_ | This option is intended for internal use by MinIO server. This option should not be set unless the application is aware of intended use.              |
 
 **Return Value**
@@ -646,7 +646,7 @@ Uploads objects that are less than 128MiB in a single PUT operation. For objects
 | `opts.CacheControl`            | _string_                   | Used to specify directives for caching mechanisms in both requests and responses e.g "max-age=600"                                                                                 |
 | `opts.Mode`                    | \*_minio.RetentionMode_    | Retention mode to be set, e.g "COMPLIANCE"                                                                                                                                         |
 | `opts.RetainUntilDate`         | \*_time.Time_              | Time until which the retention applied is valid                                                                                                                                    |
-| `opts.ServerSideEncryption`    | _encrypt.ServerSide_       | Interface provided by `encrypt` package to specify server-side-encryption. (For more information see https://godoc.org/github.com/minio/minio-go/v7\)                              |
+| `opts.ServerSideEncryption`    | _encrypt.ServerSide_       | Interface provided by `encrypt` package to specify server-side-encryption. (For more information see https://godoc.org/github.com/lgcorzo/minio-go/v7\)                              |
 | `opts.StorageClass`            | _string_                   | Specify storage class for the object. Supported values for MinIO server are `REDUCED_REDUNDANCY` and `STANDARD`                                                                    |
 | `opts.WebsiteRedirectLocation` | _string_                   | Specify a redirect for the object, to another object in the same bucket or to a external URL.                                                                                      |
 | `opts.SendContentMd5`          | _bool_                     | Specify if you'd like to send `content-md5` header with PutObject operation. Note that setting this flag will cause higher memory usage because of in-memory `md5sum` calculation. |
@@ -1498,7 +1498,7 @@ Returns a stream of the object data. Most of the common errors occur when readin
 
 | Field                       | Type                 | Description                                                                                                                                                 |
 | :-------------------------- | :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `opts.ServerSideEncryption` | _encrypt.ServerSide_ | Interface provided by `encrypt` package to specify server-side-encryption. (For more information see https://godoc.org/github.com/minio/minio-go/v7\)       |
+| `opts.ServerSideEncryption` | _encrypt.ServerSide_ | Interface provided by `encrypt` package to specify server-side-encryption. (For more information see https://godoc.org/github.com/lgcorzo/minio-go/v7\)       |
 | `opts.MaxParts`             | \_int                | This option defines how many parts should be returned by the API                                                                                            |
 | `opts.VersionID`            | \_string             | VersionID defines which version of the object will be used                                                                                                  |
 | `opts.PartNumberMarker`     | \_int                | This options defines which part number pagination will start after, the part which number is equal to PartNumberMarker will not be included in the response |
