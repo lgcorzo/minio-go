@@ -28,7 +28,7 @@ import (
 
 	"github.com/lgcorzo/minio-go/v7"
 	"github.com/lgcorzo/minio-go/v7/pkg/credentials"
-	"github.com/lgcorzo/sio"
+	"github.com/minio/sio"
 	"golang.org/x/crypto/argon2"
 )
 
