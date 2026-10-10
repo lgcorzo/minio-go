@@ -84,16 +84,16 @@ func IsVirtualHostSupported(endpointURL url.URL, bucketName string) bool {
 // Refer for region styles - https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region
 
 // amazonS3HostHyphen - regular expression used to determine if an arg is s3 host in hyphenated style.
-var amazonS3HostHyphen = regexp.MustCompile(`^s3-(.*?).amazonaws.com$`)
+var amazonS3HostHyphen = regexp.MustCompile(`^s3-(.*?)\.amazonaws\.com$`)
 
 // amazonS3HostDualStack - regular expression used to determine if an arg is s3 host dualstack.
-var amazonS3HostDualStack = regexp.MustCompile(`^s3.dualstack.(.*?).amazonaws.com$`)
+var amazonS3HostDualStack = regexp.MustCompile(`^s3\.dualstack\.(.*?)\.amazonaws\.com$`)
 
 // amazonS3HostFIPS - regular expression used to determine if an arg is s3 FIPS host.
-var amazonS3HostFIPS = regexp.MustCompile(`^s3-fips.(.*?).amazonaws.com$`)
+var amazonS3HostFIPS = regexp.MustCompile(`^s3-fips[-.](.*?)\.amazonaws\.com$`)
 
 // amazonS3HostFIPSDualStack - regular expression used to determine if an arg is s3 FIPS host dualstack.
-var amazonS3HostFIPSDualStack = regexp.MustCompile(`^s3-fips.dualstack.(.*?).amazonaws.com$`)
+var amazonS3HostFIPSDualStack = regexp.MustCompile(`^s3-fips[-.]dualstack\.(.*?)\.amazonaws\.com$`)
 
 // amazonS3HostExpress - regular expression used to determine if an arg is S3 Express zonal endpoint.
 // The zone ID may be an Availability Zone (use1-az4) or a Local Zone (usw2-lax1-az1),
@@ -105,22 +105,22 @@ var amazonS3HostExpress = regexp.MustCompile(`^s3express-[a-z0-9]+(?:-[a-z0-9]+)
 var amazonS3HostExpressControl = regexp.MustCompile(`^s3express-control(?:-dualstack)?\.([a-z0-9-]+)\.amazonaws\.com$`)
 
 // amazonS3HostDot - regular expression used to determine if an arg is s3 host in . style.
-var amazonS3HostDot = regexp.MustCompile(`^s3.(.*?).amazonaws.com$`)
+var amazonS3HostDot = regexp.MustCompile(`^s3\.(.*?)\.amazonaws\.com$`)
 
 // amazonS3ChinaHost - regular expression used to determine if the arg is s3 china host.
-var amazonS3ChinaHost = regexp.MustCompile(`^s3.(cn.*?).amazonaws.com.cn$`)
+var amazonS3ChinaHost = regexp.MustCompile(`^s3\.(cn.*?)\.amazonaws\.com\.cn$`)
 
 // amazonS3ChinaHostDualStack - regular expression used to determine if the arg is s3 china host dualstack.
-var amazonS3ChinaHostDualStack = regexp.MustCompile(`^s3.dualstack.(cn.*?).amazonaws.com.cn$`)
+var amazonS3ChinaHostDualStack = regexp.MustCompile(`^s3\.dualstack\.(cn.*?)\.amazonaws\.com\.cn$`)
 
 // Regular expression used to determine if the arg is elb host.
-var elbAmazonRegex = regexp.MustCompile(`elb(.*?).amazonaws.com$`)
+var elbAmazonRegex = regexp.MustCompile(`elb(.*?)\.amazonaws\.com$`)
 
 // Regular expression used to determine if the arg is elb host in china.
-var elbAmazonCnRegex = regexp.MustCompile(`elb(.*?).amazonaws.com.cn$`)
+var elbAmazonCnRegex = regexp.MustCompile(`elb(.*?)\.amazonaws\.com\.cn$`)
 
 // amazonS3HostPrivateLink - regular expression used to determine if an arg is s3 host in AWS PrivateLink interface endpoints style
-var amazonS3HostPrivateLink = regexp.MustCompile(`^(?:bucket|accesspoint).vpce-.*?.s3.(.*?).vpce.amazonaws.com$`)
+var amazonS3HostPrivateLink = regexp.MustCompile(`^(?:bucket|accesspoint)\.vpce-.*?\.s3\.(.*?)\.vpce\.amazonaws\.com$`)
 
 // amazonS3HostOutposts - regular expression used to determine if an arg is S3 on Outposts endpoint.
 // Pattern: <something>.s3-outposts.<region>.amazonaws.com
