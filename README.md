@@ -1,3 +1,5 @@
+Maintained fork of [minio/minio-go](https://github.com/minio/minio-go). It applies security patches and maintenance fixes on top of upstream. Part of the [Dark Gravity](https://github.com/lgcorzo/rust_CACD_autonomous_factory) factory. License: Apache-2.0.
+
 MinIO Go Client SDK for Amazon S3 Compatible Cloud Storage [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/lgcorzo/minio-go/blob/master/LICENSE)
 ==================================================================================================================================================================================================================================================================================================================================================================================================================
 
@@ -113,10 +115,10 @@ import (
 )
 
 func main() {
-	endpoint := "play.min.io"
+	endpoint := "127.0.0.1:9000" // Local MinIO instance (Docker); demo credentials below are for local testing only
 	accessKeyID := "Q3AM3UQ867SPQQA43P2F"
 	secretAccessKey := "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG"
-	useSSL := true
+	useSSL := false
 
 	// Initialize minio client object.
 	minioClient, err := minio.New(endpoint, &minio.Options{
@@ -161,10 +163,10 @@ This example does the following:
 
 	func main() {
 		ctx := context.Background()
-		endpoint := "play.min.io"
+		endpoint := "127.0.0.1:9000" // Local MinIO instance (Docker); demo credentials below are for local testing only
 		accessKeyID := "Q3AM3UQ867SPQQA43P2F"
 		secretAccessKey := "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG"
-		useSSL := true
+		useSSL := false
 
 		// Initialize minio client object.
 		minioClient, err := minio.New(endpoint, &minio.Options{
@@ -400,3 +402,10 @@ License
 -------
 
 This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/lgcorzo/minio-go/blob/master/LICENSE) and [NOTICE](https://github.com/lgcorzo/minio-go/blob/master/NOTICE) for more information.
+
+---
+
+### Fork Maintenance & Agent Transparency
+
+- **Changes vs. Upstream:** Security dependency updates, CI/CD workflow fixes, and CodeQL remediation are tracked in the [commit history](https://github.com/lgcorzo/minio-go/commits) and [Pull Requests](https://github.com/lgcorzo/minio-go/pulls?q=is%3Apr).
+- **Agent Tagging (`[agent]`):** Commits and pull requests generated automatically by agents in the Dark Gravity pipeline are prefixed with `[agent]` to distinguish automated maintenance from manual work.
